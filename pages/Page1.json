@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 5010,
+          "bottomRow": 1320,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -142,6 +142,43 @@
                 "status": 75,
                 "_id": 169
               }
+            },
+            {
+              "widgetName": "Select1",
+              "isFilterable": false,
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba.svg",
+              "labelText": "Label",
+              "topRow": 30,
+              "bottomRow": 37,
+              "parentRowSpace": 10,
+              "type": "DROP_DOWN_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": true,
+              "defaultOptionValue": "{{\n            {\n              label: Select1.options[0].label,\n              value: Select1.options[0].value\n            }\n          }}",
+              "selectionType": "SINGLE_SELECT",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "options"
+                },
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "leftColumn": 0,
+              "options": "{{Query1.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.name } })}}",
+              "placeholderText": "Select option",
+              "isDisabled": false,
+              "key": "16t4hfjyr0",
+              "isRequired": false,
+              "rightColumn": 20,
+              "widgetId": "w1wjexjq1j",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false
             }
           ]
         },
@@ -158,6 +195,7 @@
         ],
         "widgetNames": [
           "MainContainer",
+          "Select1",
           "Table1"
         ],
         "validOnPageLoadActions": true,
