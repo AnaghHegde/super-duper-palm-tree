@@ -8,13 +8,29 @@
     "name": "Classic",
     "isSystemTheme": true,
     "deleted": false,
-    "policies": []
+    "policies": [
+      {
+        "permission": "read:themes",
+        "users": [
+          "anonymousUser"
+        ],
+        "groups": []
+      }
+    ]
   },
   "publishedTheme": {
     "name": "Classic",
     "isSystemTheme": true,
     "deleted": false,
-    "policies": []
+    "policies": [
+      {
+        "permission": "read:themes",
+        "users": [
+          "anonymousUser"
+        ],
+        "groups": []
+      }
+    ]
   },
   "publishedLayoutmongoEscapedWidgets": {
     "Page1": [
