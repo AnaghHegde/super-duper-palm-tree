@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 52,
+          "version": 57,
           "minHeight": 710,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -190,23 +190,22 @@
               "type": "TEXT_WIDGET",
               "hideCard": false,
               "animateLoading": true,
+              "overflow": "NONE",
               "dynamicBindingPathList": [
                 {
                   "key": "text"
                 }
               ],
               "leftColumn": 0,
-              "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
               "text": "{{JSON.stringify(Query1.data, null, 2)}}",
               "key": "7t8j2vpolp",
-              "rightColumn": 16,
+              "rightColumn": 20,
               "textAlign": "LEFT",
               "widgetId": "abtdrx5216",
               "isVisible": true,
               "fontStyle": "BOLD",
               "textColor": "#231F20",
-              "shouldScroll": false,
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
@@ -220,6 +219,7 @@
             {
               "id": "Page1_Query1",
               "name": "Query1",
+              "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000

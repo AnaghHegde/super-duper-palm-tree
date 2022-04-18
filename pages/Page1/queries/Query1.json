@@ -18,20 +18,27 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
-        "command": "FIND",
-        "updateMany": {
-          "limit": "SINGLE"
+        "collection": {
+          "data": "user",
+          "viewType": "component",
+          "componentData": "user"
         },
-        "delete": {
-          "limit": "SINGLE"
+        "command": {
+          "data": "FIND",
+          "viewType": "component",
+          "componentData": "FIND"
         },
-        "aggregate": {
-          "limit": "10"
-        },
-        "smartSubstitution": true,
-        "collection": "user",
         "find": {
-          "query": "{}"
+          "query": {
+            "data": "{}",
+            "viewType": "component",
+            "componentData": "{}"
+          }
+        },
+        "smartSubstitution": {
+          "data": true,
+          "viewType": "component",
+          "componentData": true
         }
       }
     },
